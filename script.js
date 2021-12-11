@@ -1,3 +1,12 @@
+//Prompts needed to be shown:
+//1. the user needs a length of at least 8 characters and no more than 128 characters
+//2. the user needs lower case
+//3. the user needs upper case
+//4. the user needs numbers
+//5. the user needs special characters
+
+//First step would be create vars for length, lower case, upper case, numbers and special characters?
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
