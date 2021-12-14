@@ -21,7 +21,7 @@ var alphabetLower = 'abcdefghijklmnopqrstuvwxyz'.split('');
 var alphabetUpper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split(''); 
 var numbers  = '0123456789'.split(''); 
 var specialCharacters = '!@#$%^&*()'.split(''); 
-var length = 0;
+var characterLength = 0;
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
@@ -30,8 +30,6 @@ var generateBtn = document.querySelector("#generate");
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-  
-
   passwordText.value = password;
 
 }
@@ -39,3 +37,5 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
    //return 
+
+   var characterLength = prompt ("test");
