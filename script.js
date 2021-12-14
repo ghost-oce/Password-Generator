@@ -13,12 +13,15 @@
 //4. the user needs numbers
 //5. the user needs special characters - special characters include: !@#$%^&*()''"
 
+//length ??
+
 //First step would be create vars for length, lower case, upper case, numbers and special characters?
 
 var alphabetLower = 'abcdefghijklmnopqrstuvwxyz'.split(''); 
 var alphabetUpper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split(''); 
 var numbers  = '0123456789'.split(''); 
 var specialCharacters = '!@#$%^&*()'.split(''); 
+var length = 0;
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
@@ -27,6 +30,7 @@ var generateBtn = document.querySelector("#generate");
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
+  
 
   passwordText.value = password;
 
