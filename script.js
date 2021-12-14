@@ -40,4 +40,6 @@ generateBtn.addEventListener("click", writePassword);
 
    var characterLength = prompt ("Please choose between 8 characters to 128 characters for your password length.");
 
-   var alphabetLower = confirm ("Click OK if you would like to include lowercases in your password.");
+   var alphabetLower = confirm ("Click OK if you would like to include lowercases in your password. For example: A B C ");
+
+   var alphabetUpper = confirm ("Click OK if you would like to include uppercases in your password. For example: a b c");
