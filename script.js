@@ -38,4 +38,4 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
    //return 
 
-   var characterLength = prompt ("test");
+   var characterLength = prompt ("Please choose between 8 characters to 128 characters for your password length.");
