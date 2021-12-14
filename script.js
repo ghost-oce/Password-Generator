@@ -20,7 +20,7 @@
 var alphabetLower = 'abcdefghijklmnopqrstuvwxyz'.split(''); 
 var alphabetUpper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split(''); 
 var numbers  = '0123456789'.split(''); 
-var specialCharacters = '!@#$%^&*()'.split(''); 
+var specialCharacters = '!#$%&()*+,-./:";<=>?@[\]^_`{|}~'.split(''); 
 var characterLength = 0;
 
 // Assignment Code
@@ -39,3 +39,5 @@ generateBtn.addEventListener("click", writePassword);
    //return 
 
    var characterLength = prompt ("Please choose between 8 characters to 128 characters for your password length.");
+
+   var alphabetLower = confirm ("Click OK if you would like to include lowercases in your password.");
