@@ -15,6 +15,11 @@
 
 //First step would be create vars for length, lower case, upper case, numbers and special characters?
 
+var alphabetLower = 'abcdefghijklmnopqrstuvwxyz'.split(''); 
+var alphabetUpper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split(''); 
+var numbers  = '0123456789'.split(''); 
+var specialCharacters = '!@#$%^&*()'.split(''); 
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
@@ -29,4 +34,4 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
+   //return 
