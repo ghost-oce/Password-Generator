@@ -43,3 +43,7 @@ generateBtn.addEventListener("click", writePassword);
    var alphabetLower = confirm ("Click OK if you would like to include lowercases in your password. For example: A B C ");
 
    var alphabetUpper = confirm ("Click OK if you would like to include uppercases in your password. For example: a b c");
+
+   specialCharacters = confirm ("Click OK if you would like to include special characters in your password. For example: ! @ #");
+
+   
