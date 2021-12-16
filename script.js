@@ -32,7 +32,6 @@ var numberLength ="";
 var characterCount = "";
 var passwordText=""; 
 
-
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
@@ -52,6 +51,11 @@ function writePassword() {
 
   numberLength = confirm ("Click OK if you would like to include numbers in your password. For example: 1 2 3");
 
+function generatePassword () {
+  if (!characterCount || characterCount <=7 || characterCount >= 129) {
+    return alert ("Please try again and pick a number between 8 to 128.");
+  }
+}
 
   
 // Add event listener to generate button
