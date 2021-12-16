@@ -14,6 +14,7 @@
 //5. the user needs special characters - special characters include: !@#$%^&*()''"
 
 //length ??
+// things needed to consider such as a return ? 
 
 //First step would be create vars for length, lower case, upper case, numbers and special characters?
 
@@ -23,6 +24,15 @@ var numbers  = '0123456789'.split('');
 var specialCharacters = '!#$%&()*+,-./:";<=>?@[\]^_`{|}~'.split(''); 
 var characterLength = 0;
 
+var upperCase = "";
+var lowerCase = "";
+var upperCase = "";
+var special = "";
+var numberLength ="";
+var characterCount = "";
+var passwordText=""; 
+
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
@@ -31,19 +41,20 @@ function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
-
 }
+  characterCount = prompt ("Please choose between 8 characters to 128 characters for your password length.");
 
+  lowerCase = confirm ("Click OK if you would like to include lowercases in your password. For example: A B C ");
+
+  upperCase = confirm ("Click OK if you would like to include uppercases in your password. For example: a b c");
+
+  special = confirm ("Click OK if you would like to include special characters in your password. For example: ! @ #");
+
+  numberLength = confirm ("Click OK if you would like to include numbers in your password. For example: 1 2 3");
+
+
+  
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-   //return 
 
-   var characterLength = prompt ("Please choose between 8 characters to 128 characters for your password length.");
 
-   var alphabetLower = confirm ("Click OK if you would like to include lowercases in your password. For example: A B C ");
-
-   var alphabetUpper = confirm ("Click OK if you would like to include uppercases in your password. For example: a b c");
-
-   specialCharacters = confirm ("Click OK if you would like to include special characters in your password. For example: ! @ #");
-
-   
